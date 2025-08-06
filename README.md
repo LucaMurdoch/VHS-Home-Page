@@ -2,7 +2,7 @@
 
 **Access this Home Page:** [https://lucamurdoch.github.io/VHS-Home-Page/](https://lucamurdoch.github.io/VHS-Home-Page/)
 
-![Demo Screenshot](Demo.png)
+![Demo Screenshot](demo.png)
 
 A simple, visually appealing home page for students to quickly access important school-related links.
 
