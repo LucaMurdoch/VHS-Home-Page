@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>School Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg-color: #102a43; /* Dark blue-grey */
+      --header-bg: #1b365d; /* Darker blue */
+      --card-bg: #152b47; /* Medium blue-grey */
+      --card-hover-bg: #00bfb2; /* Teal */
+      --accent-color: #00bfb2; /* Teal */
+      --text-color: #e0e0e0; /* Light grey */
+      --shadow-dark: rgba(0, 0, 0, 0.8);
+      --shadow-light: rgba(0, 191, 178, 0.4); /* Teal shadow */
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2.5rem 0 1.5rem 0;
+      background: var(--header-bg);
+      border-bottom: 3px solid var(--accent-color);
+      box-shadow: 0 4px 15px var(--shadow-dark);
+    }
+
+    .logo {
+      max-width: 150px;
+      width: 100%;
+      margin-bottom: 1.5rem;
+      filter: drop-shadow(0 0 10px var(--accent-color));
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 3px;
+      color: var(--accent-color);
+      text-shadow: 0 0 15px var(--shadow-light);
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: var(--text-color);
+      margin-top: 0.5rem;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem;
+      padding: 3rem;
+    }
+
+    .link-card {
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 1.5rem;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 5px 20px var(--shadow-dark);
+      transition: all 0.3s ease-in-out;
+      border: 1px solid var(--accent-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .link-card:hover {
+      background: var(--card-hover-bg);
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 25px var(--shadow-light);
+      border-color: var(--accent-color);
+    }
+
+    .link-card i {
+      margin-bottom: 1rem;
+      font-size: 4.5rem; /* Slightly larger icons */
+      color: var(--accent-color);
+      text-shadow: 0 0 10px var(--shadow-light);
+      transition: color 0.3s ease-in-out;
+    }
+
+    .link-card:hover i {
+      color: var(--text-color);
+    }
+
+    .link-card a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .link-card p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 1rem;
+      color: var(--text-color);
+      background: var(--header-bg);
+      border-top: 3px solid var(--accent-color);
+      box-shadow: 0 -4px 15px var(--shadow-dark);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    
+    <h1>Vincentia High School</h1>
+    
+  </header>
+  <main>
+    <div class="link-card">
+      <a href="https://portal.education.nsw.gov.au/" target="_blank">
+        <i class="fas fa-school fa-4x"></i>
+        <p>NSW Portal</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://mail.google.com/a/education.nsw.gov.au" target="_blank">
+                <i class="fas fa-envelope fa-4x"></i>
+        <p>Gmail</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="http://classroom.google.com/a/education.nsw.gov.au/" target="_blank">
+        <i class="fas fa-chalkboard fa-4x"></i>
+        <p>Google Classroom</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://vincentiahs.sentral.com.au/auth/portal?action=login_student" target="_blank">
+        <i class="fas fa-user-graduate fa-4x"></i>
+        <p>Sentral Student Login</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="http://www.google.com.au/" target="_blank">
+        <i class="fab fa-google fa-4x"></i>
+        <p>Google</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="http://detnsw.net/" target="_blank">
+        <i class="fas fa-building fa-4x"></i>
+        <p>DET NSW</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://vincentia-h.schools.nsw.gov.au/" target="_blank">
+        <i class="fas fa-globe fa-4x"></i>
+        <p>School Website</p>
+      </a>
+    </div>
+    
+    <div class="link-card">
+      <a href="https://library.det.nsw.edu.au/" target="_blank">
+        <i class="fas fa-book fa-4x"></i>
+        <p>Library</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://online.clickview.com.au/" target="_blank">
+        <i class="fas fa-video fa-4x"></i>
+        <p>ClickView</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://earth.google.com/web/" target="_blank">
+        <i class="fas fa-earth-asia fa-4x"></i>
+        <p>Google Earth</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="http://10.220.128.22:9191/user" target="_blank">
+        <i class="fas fa-user fa-4x"></i>
+        <p>User Portal</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://outlook.office.com/calendar/" target="_blank">
+        <i class="fas fa-calendar-alt fa-4x"></i>
+        <p>School Calendar</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://education.nsw.gov.au/teaching-and-learning" target="_blank">
+        <i class="fas fa-chalkboard-teacher fa-4x"></i>
+        <p>Teaching & Learning</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://onedrive.live.com/" target="_blank">
+        <i class="fas fa-cloud fa-4x"></i>
+        <p>OneDrive</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://www.office.com/" target="_blank">
+        <i class="fab fa-microsoft fa-4x"></i>
+        <p>Office 365</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://drive.google.com/" target="_blank">
+        <i class="fab fa-google-drive fa-4x"></i>
+        <p>Google Drive</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://docs.google.com/" target="_blank">
+        <i class="fas fa-file-alt fa-4x"></i>
+        <p>Google Docs</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://sheets.google.com/" target="_blank">
+                <i class="fas fa-table fa-4x"></i>
+        <p>Google Sheets</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://slides.google.com/" target="_blank">
+        <i class="fas fa-file-powerpoint fa-4x"></i>
+        <p>Google Slides</p>
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://login.renaissance.com/13267791-e829-4bb5-9cf4-12ae5e5c13c0?state=1520cbe8-18bd-44cf-8044-5bb84b1d1293" target="_blank">
+        <i class="fas fa-r fa-4x"></i>
+        <p>Renaissance</p>
+      </a>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Vincentia High School. All rights reserved.
+  </footer>
+</body>
+
+</html>
